@@ -1,0 +1,45 @@
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 999999;
+}
+.color{
+    background-color: #080808;
+}
+nav .hamburger{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+@media(max-width:700px){
+    nav .hamburger{
+        display: block;
+    }
+   .menu{
+        position: absolute;
+
+        height: 100vh;
+        z-index: -1;
+        top: 0vh;
+        left: -100vw;
+        flex-direction: column;
+        gap: 30px;
+        width: 100vw;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.8);
+        
+    }
+    .active{
+        left: 0;
+    }
+}

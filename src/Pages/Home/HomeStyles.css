@@ -1,0 +1,366 @@
+/* ********************************Hero Section*************************************** */
+
+.hero video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.hero .content h1 {
+    font-size: 50px;
+}
+
+.hero .content .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.hero .content .buttons a {
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.hero .content .buttons a:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+}
+
+
+
+/* *********************************About Section****************************************** */
+
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    padding: 0 30px;
+    background-size: cover;
+    background-image: url("../../assets/About\ Img.jpg");
+    background-attachment: fixed;
+
+    h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+.about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* *********************************Aboutus Section****************************************** */
+
+
+.aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 50px 80px;
+}
+
+.aboutus img {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+
+}
+
+.aboutus .content1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    gap: 30px;
+    line-height: 1.5;
+}
+
+@media(max-width:1260px) {
+    .aboutus {
+        flex-wrap: wrap;
+    }
+
+    .aboutus .content1 {
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+@media(max-width:650px) {
+    .aboutus {
+        padding: 50px 30px;
+    }
+
+    .aboutus img {
+        height: auto;
+        width: 87vw;
+
+    }
+}
+
+
+/* *********************************Services Section****************************************** */
+
+.services {
+    width: 100vw;
+    padding: 50px 80px;
+    gap: 30px;
+}
+
+.services img {
+    width: 100%;
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+@media(max-width:900px) {
+    .services {
+        padding: 50px 30px;
+    }
+}
+
+/* *********************************Call to Action****************************************** */
+
+.section{
+    position: relative;
+}
+.section video{
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.call-to-action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    padding: 30px;
+    h2 {
+        font-size: 40px;
+    }
+}
+
+.call-to-action button {
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 1px solid white; 
+}
+.call-to-action button:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+}
+
+@media(max-width:1000px) {
+    .section vedio{
+        height: 250px;
+    }
+    .call-to-action {
+        gap: 30px;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .call-to-action button {
+            padding: 8px 30px;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .call-to-action h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* *********************************Model Section****************************************** */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay .model {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
+    padding: 50px 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    line-height: 1.4;
+
+}
+
+.overlay .model .cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media(max-width:800px) {
+    .overlay {
+        width: 100vw;
+    }
+
+    .overlay .model {
+        width: 85vw;
+        height: auto;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .overlay .model h2 {
+        font-size: 15px;
+    }
+}
+
+
+/* *********************************faq Section****************************************** */
+
+.faq {
+    width: 100vw;
+    padding: 50px 150px;
+}
+
+.faq .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.faq .item .wrapper {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.faq .item .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.faq .item .question .box {
+
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 20px;
+        opacity: 0.7;
+        transition: all 0.5s cubic-bezier(0,1,0,1);
+    }
+}
+
+.answer{
+max-height: 0;
+overflow: hidden;
+transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.answer.show{
+    height: auto;
+    max-height: 99999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+.reverse{
+    transform: rotate(180deg);
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+
+
+@media(max-width:1200px) {
+    .faq {
+        padding: 50px 100px;
+    }
+}
+
+@media(max-width:800px) {
+    .faq {
+        padding: 50px 60px;
+    }
+}
+
+@media(max-width:500px) {
+    .faq {
+        padding: 50px 20px;
+    }
+}

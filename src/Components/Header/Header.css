@@ -1,0 +1,35 @@
+.header {
+    height: 100vh;
+    background-image: url("../../assets/header\ img.jpg");
+    background-position: fixed;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 100px;
+    line-height: 1.1;
+    gap: 20px;
+    h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:750px){
+    .header{
+        padding: 0 50px;
+        height: 80vh;
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+@media(max-width:450px){
+    .header{
+        padding: 0 20px;
+        h1{
+            font-size: 22px;
+        }
+    }
+}
